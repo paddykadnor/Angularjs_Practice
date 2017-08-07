@@ -1,0 +1,389 @@
+﻿body {
+    font-family: '13px/1.231 Open Sans,arial,helvetica,clean,sans-serif';
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #1A1A1A;
+    width: 100%;
+    margin: 0;
+    height: 30px;
+}
+
+.nav-menu {
+    line-height: 28px;
+    color: #fff;
+    padding-left: 10px;
+    width: 50%;
+    display: inline-block;
+}
+
+    .nav-menu ul {
+        display: inline-block;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        list-style-type: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 26px;
+        font-size: 14px;
+    }
+
+    .nav-menu a {
+        color: #eee;
+        text-decoration: none;
+    }
+
+    .nav-menu i {
+        margin-left: 4px;
+        margin-right: 0px;
+        color: #eee;
+        font-size: 9px;
+    }
+
+.hasmenu {
+    position: absolute;
+    background-color: #1A1A1A;
+    display: none !important;
+}
+
+.nav-menu li:hover > .hasmenu {
+    display: block !important;
+}
+
+.hasmenu li {
+    display: block;
+    padding: 0px 12px;
+    font-size: 14px;
+}
+
+.hasmenu a {
+    color: #fff;
+}
+
+.login-name {
+    display: inline-block;
+    width: 30%;
+    color: #eee;
+    cursor:pointer;
+}
+
+.account-name {
+    width: 34%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    text-align:right;
+    margin-right:24px;
+}
+
+.profile-name {
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    overflow:hidden
+}
+
+.arrow{
+    position:relative;
+}
+
+.search-box {
+    display: inline-block;
+    width: 19%;
+}
+
+.inptsearch-box {
+    width: 100%;
+    border-radius: 60px;
+    padding: 2px 26px;
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+i {
+    font-size: 12px !important;
+    color: #eee;
+}
+
+.clearsearch {
+    position: absolute;
+    right: 14px;
+    top: 6px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-times-circle-o {
+    font-size: 18px !important;
+}
+
+.panel-section {
+    width: 100%;
+    background-color: #FBFBFB;
+    padding: 6px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.logosection {
+    display: inline-block;
+    width: 4%;
+    height: 48px;
+}
+
+.name-section {
+    display: inline-block;
+    font-size: 26px;
+    color: #8A8E8F;
+    max-width: 90%;
+    width: 100%;
+    height: 48px;
+    font-weight: normal;
+}
+
+    .name-section h2 {
+        position: relative;
+        top: 6px;
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+.content {
+    width: 98%;
+    margin: 20px;
+}
+
+.site-content, .task-content {
+    width: 100%;
+    display: inline-block;
+    height: 168px;
+    overflow: auto;
+}
+
+.content-title {
+    border: 1px solid #ccc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #eee;
+    padding: 3px 9px;
+    border-bottom: 1px solid #ccc;
+}
+
+    .title span {
+        font-size: 14px;
+    }
+
+.site-section, .task-section {
+    padding: 3px 9px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+    .site-section i, .task-section i {
+        font-size: 14px !important;
+        color: #999;
+        padding: 2px;
+    }
+
+.all_left {
+    width: 50%;
+    display: inline-block;
+}
+
+.create-site {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.site-files {
+    padding: 6px;
+}
+
+    .site-files:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+        padding: 6px;
+    }
+
+.earth-iconn {
+    display: inline-block;
+    width: 9%;
+    position: relative;
+    top: -32px;
+}
+
+    .earth-iconn .fa-globe {
+        font-size: 28px !important;
+        color: #999;
+    }
+
+.site-info {
+    display: inline-block;
+    width: 86%;
+    line-height: 24px;
+    padding-top: 4px;
+    position: relative;
+}
+
+    .site-info p {
+        padding: 0;
+        margin: 0;
+        line-height: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .site-info a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .site-info span {
+        font-size: 12px;
+        color: #ccc;
+    }
+
+.fa-star-o {
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+}
+
+.content1 {
+    width: 26%;
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+.tasks-page {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+}
+
+.task-list:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.task-list i {
+    font-size: 14px !important;
+    color: #8A8A8A;
+    margin: 10px;
+}
+
+.task-list p {
+    margin: 0;
+    position: relative;
+    top: -31px;
+    left: 34px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+}
+
+/*content 2 div*/
+
+.content2 {
+    display: inline-block;
+    width: 44%;
+    float: left;
+    margin-right: 20px;
+    margin:auto;
+}
+
+
+/*content last div*/
+.content3 {
+    display: inline-block;
+    width: 27%;
+    float: left;
+}
+
+.content-edit {
+    border: 1px solid #ccc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.content-list:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.content-list p {
+    padding: 0;
+    margin: 4px 10px 0px 10px;
+}
+
+    .content-list p:first-child {
+        font-weight: 400;
+    }
+
+    .content-list p:last-child {
+        color: #ccc;
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+
+.basic-info {
+    display: inline-block;
+    width: 46%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align:top;
+}
+
+.activity {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
+.activity-list i {
+    font-size: 22px !important;
+}
+
+.activity-list p {
+    text-align: left;
+    white-space: normal;
+    width: 75%;
+    left: 46px;
+    top: -28px;
+    font-size:12px;
+}
+
+.activity-list h6 {
+    position: relative;
+    top: -32px;
+    left: 46px;
+    font-size:14px;
+    margin:0;
+}

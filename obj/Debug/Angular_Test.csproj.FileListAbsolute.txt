@@ -1,0 +1,6 @@
+F:\Angular_Test\Angular_Test\bin\Angular_Test.dll.config
+F:\Angular_Test\Angular_Test\bin\Angular_Test.dll
+F:\Angular_Test\Angular_Test\bin\Angular_Test.pdb
+F:\Angular_Test\Angular_Test\obj\Debug\Angular_Test.csprojResolveAssemblyReference.cache
+F:\Angular_Test\Angular_Test\obj\Debug\Angular_Test.dll
+F:\Angular_Test\Angular_Test\obj\Debug\Angular_Test.pdb

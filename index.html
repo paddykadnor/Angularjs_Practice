@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="qApp">
+<head>
+    <title>Dashboard | Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script><!-- angularjs cdn library-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="assets/css/site.css" rel="stylesheet" />
+    <script src="assets/js/main.js"></script>
+</head>
+<body ng-controller="qCtrl">
+
+    <div class="container">
+        <div class="header">
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#Task">Task</a>
+                    </li>
+                    <li>
+                        <a href="#Site">Site</a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <ul class="hasmenu">
+                            <li><a href="#My Site">My Site</a></li>
+                            <li><a href="#Site Finder">Site Finder</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#People">People</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-name">
+                <div class="account-name" ng-model="myProfile.title">quanticate.com <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                <div class="profile-name" ng-repeat="name in myProfile | filter : 'muralidharan-dheenadhayalan-quanticate-com'">{{ name.title }}</div><i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+            </div>
+            <div class="search-box">
+
+                <input type="text" name="search" class="inptsearch-box" ng-model="myProfile.search" placeholder="search files, people, sites" />
+                <div class="clearsearch" ng-click="clearSearchbox();">
+                    <i class="fa fa-3x fa-times-circle-o" aria-hidden="true"></i>
+                </div>
+
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="panel-section">
+            <div class="logosection">
+                <img src="assets/img/app-logo-48.png" alt="Logo" />
+            </div>
+            <div class="name-section" ng-repeat="name in myProfile | filter : 'muralidharan-dheenadhayalan-quanticate-com'">
+                <h2> {{name.title.replace('Home',"Dashboard")}}</h2>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="sites content-title">
+                    <div class="title">                    <span>My Sites</span></div>
+
+                    <div class="site-section">
+                        <div class="all_left">All<i class="fa fa-caret-down" aria-hidden="true"></i></div><div class="create-site"><i class="fa fa-globe" aria-hidden="true"></i> Create Site</i></div>
+                    </div>
+                    <div class="site-content">
+                        <div class="site-files" ng-repeat="site in myProfile | filter : 'site-dashboard'">
+                            <div class="earth-iconn"><i class="fa fa-3x fa-globe" aria-hidden="true"></i></div>
+                            <div class="site-info">
+                                <p> <a href="{{site.url}}"> {{site.title}} </a></p>
+                                <span ng-if="site.description">{{site.description}}</span>
+                                <span ng-if="!site.description">No Description</span><br />
+                                <i class="icon-star    fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tasks content-title">
+                    <div class="title">
+                        <span>My Tasks</span>
+                    </div>
+                    <div class="task-section">
+                        <div class="all_left">Active Tasks<i class="fa fa-caret-down" aria-hidden="true"></i></div><div class="create-site"><i class="fa fa-globe" aria-hidden="true"></i> Create Site</i></div>
+                    </div>
+                    <div>
+                        <div class="tasks-page">
+                            << &nbsp; < &nbsp; 1-2 of 2 &nbsp;>&nbsp; >> &nbsp; Active Tasks | Completed Tasks
+                        </div>
+                        <div class="task-list-section task-content">
+                            <div class="task-list">
+                                <i class="fa fa-align-justify" aria-hidden="true"></i> <p>  The document was reviewed and approved.<br />Document Approved,Not Yet Started</p>
+                            </div>
+                            <div class="task-list">
+                                <i class="fa fa-align-justify" aria-hidden="true"></i> <p>  this is test<br />Task,Not Yet Started</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="basic-info content-title">
+                    <div class="title">
+                        <span>Activities</span>
+                    </div>
+                    <div class="site-section">
+                        <div class="activity">
+                           Everyone's activities <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="activity">
+                            all items <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="activity">
+                            in last 7 days <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="clear"></div>
+
+
+                    </div>
+                    <div class="task-list activity-list">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+   <h6>Follow what's going on in your sites</h6> <p>The activities in this list let you follow the changes in the sites you belong to. You'll see things such as content updates and likes. You can also see who is joining and leaving your sites.</p>
+                    </div>
+                </div>
+                <div class="basic-info content-title">
+                    <div class="title">
+                        <span>My Documents</span>
+                    </div>
+                    <div class="site-section">
+                        <div class="doc-info">I have recently modified<i class="fa fa-caret-down" aria-hidden="true"></i></div>
+
+                    </div>
+                    <div class="task-list activity-list">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h6>Keep track of your own content</h6> <p>This dashlet lists all of the content that's important to you, no matter which site it is in. Use the filters to easily find what you're looking for.</p>
+                    </div>
+                </div>
+                <div class="basic-info content-title">
+                    <div class="title">
+                        <span>My Documents</span>
+                    </div>
+                    <div class="site-section">
+                        <div class="doc-info">I have recently modified<i class="fa fa-caret-down" aria-hidden="true"></i></div>
+
+                    </div>
+                    <div class="task-list activity-list">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h6>Keep track of your own content</h6> <p>This dashlet lists all of the content that's important to you, no matter which site it is in. Use the filters to easily find what you're looking for.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+            <div class="content3">
+
+                <div class="content-edit">
+                    <div class="title">
+                        <span>Content I'm editing</span>
+                    </div>
+                    <div class="content-list">
+                        <p>Documents</p>
+                        <p>No Items to display</p>
+                    </div>
+                    <div class="content-list">
+                        <p>Blog posts</p>
+                        <p>No Items to display</p>
+                    </div>
+                    <div class="content-list">
+                        <p>Wiki pages</p>
+                        <p>No Items to display</p>
+                    </div>
+                    <div class="content-list">
+                        <p>Forum posts</p>
+                        <p>No Items to display</p>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="sites content-title">
+                    <div class="title">                    <span>My Sites</span></div>
+
+                    <div class="site-section">
+                        <div class="all_left">All<i class="fa fa-caret-down" aria-hidden="true"></i></div><div class="create-site"><i class="fa fa-globe" aria-hidden="true"></i> Create Site</i></div>
+                    </div>
+                    <div class="site-content">
+                        <div class="site-files" ng-repeat="site in myProfile | filter : 'site-dashboard'">
+                            <div class="earth-iconn"><i class="fa fa-3x fa-globe" aria-hidden="true"></i></div>
+                            <div class="site-info">
+                                <p> <a href="{{site.url}}"> {{site.title}} </a></p>
+                                <span ng-if="site.description">{{site.description}}</span>
+                                <span ng-if="!site.description">No Description</span><br />
+                                <i class="icon-star    fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

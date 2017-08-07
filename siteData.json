@@ -1,0 +1,94 @@
+
+[
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/demo",
+	"sitePreset": "site-dashboard",
+	"shortName": "demo",
+	"title": "demo",
+	"description": "",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/a320afab-b145-4b2e-86d3-9b5aa6c9563c",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/a320afab-b145-4b2e-86d3-9b5aa6c9563c",
+	"siteRole": "SiteManager",
+	"isPublic": true,
+	"visibility": "PUBLIC"
+}
+		,
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/demo-list",
+	"sitePreset": "site-dashboard",
+	"shortName": "demo-list",
+	"title": "demo-list",
+	"description": "",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/4b653548-1d6d-4cdf-bf3f-3fc8ce094de9",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/4b653548-1d6d-4cdf-bf3f-3fc8ce094de9",
+	"siteRole": "SiteManager",
+	"isPublic": true,
+	"visibility": "PUBLIC"
+}
+		,
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/murali",
+	"sitePreset": "site-dashboard",
+	"shortName": "murali",
+	"title": "Murali",
+	"description": "",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/a99dbbac-9553-4718-84a2-c6232092d2ab",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/a99dbbac-9553-4718-84a2-c6232092d2ab",
+	"siteRole": "SiteManager",
+	"isPublic": false,
+	"visibility": "PRIVATE"
+}
+		,
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/muralidharan-dheenadhayalan-quanticate-com",
+	"sitePreset": "sitePreset",
+	"shortName": "muralidharan-dheenadhayalan-quanticate-com",
+	"title": "Muralidharan Dheenadhayalan's Home",
+	"description": "Muralidharan Dheenadhayalan's private home site.",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/467e1f48-da81-4cbf-80ec-84b6a0b35f6f",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/467e1f48-da81-4cbf-80ec-84b6a0b35f6f",
+	"siteRole": "SiteManager",
+	"isPublic": false,
+	"visibility": "PRIVATE"
+}
+		,
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/test",
+	"sitePreset": "site-dashboard",
+	"shortName": "test",
+	"title": "test",
+	"description": "",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/e52a96be-8d15-4a8a-9093-bf59809b480d",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/e52a96be-8d15-4a8a-9093-bf59809b480d",
+	"siteRole": "SiteManager",
+	"isPublic": true,
+	"visibility": "PUBLIC"
+}
+		,
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/test-murali",
+	"sitePreset": "site-dashboard",
+	"shortName": "test-murali",
+	"title": "test-murali",
+	"description": "",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/b7a1aa48-50c0-4112-8a88-676a765ff4a9",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/b7a1aa48-50c0-4112-8a88-676a765ff4a9",
+	"siteRole": "SiteManager",
+	"isPublic": true,
+	"visibility": "PUBLIC"
+}
+		,
+{
+	"url": "\/alfresco\/a\/quanticate.com\/api\/sites\/testsite",
+	"sitePreset": "site-dashboard",
+	"shortName": "testsite",
+	"title": "testsite",
+	"description": "",
+	"node": "\/alfresco\/a\/quanticate.com\/api\/node\/workspace\/SpacesStore\/991da14e-6507-46e8-aae7-9bd9482f3292",
+	"tagScope": "\/alfresco\/a\/quanticate.com\/api\/tagscopes\/workspace\/SpacesStore\/991da14e-6507-46e8-aae7-9bd9482f3292",
+	"siteRole": "SiteManager",
+	"isPublic": true,
+	"visibility": "PUBLIC"
+}
+		
+]
